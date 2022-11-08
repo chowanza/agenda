@@ -11,7 +11,7 @@
 
 <div class="box box-primary">
   <div class="box-header with-border">
-    <h3 class="box-title"><b>User Registration</b></h3>
+    <h3 class="box-title"><b>Registro de Usuario</b></h3>
   </div>
   <!-- /.box-header -->
   <!-- form start -->
@@ -20,45 +20,45 @@
       <div class="form-group">
         <label for="exampleInputEmail1">Name</label>
         <span id="sprytf_name">
-		<input type="text" name="name" class="form-control input-sm" placeholder="Username">
-		<span class="textfieldRequiredMsg">Name is required.</span>
-		<span class="textfieldMinCharsMsg">Name must specify at least 6 characters.</span>
+		<input type="text" name="name" class="form-control input-sm" placeholder="Nombre de Usuario">
+		<span class="textfieldRequiredMsg">Es necesario el Usuario</span>
+		<span class="textfieldMinCharsMsg">El nombre debe especificar al menos 6 caracteres.</span>
 		</span>
       </div>
 	  <div class="form-group">
-        <label for="exampleInputEmail1">Address</label>
+        <label for="exampleInputEmail1">Dirección</label>
 		<span id="sprytf_address">
-        <textarea name="address" class="form-control input-sm" placeholder="Address"></textarea>
-		<span class="textareaRequiredMsg">Address is required.</span>
-		<span class="textareaMinCharsMsg">Address must specify at least 10 characters.</span>	
+        <textarea name="address" class="form-control input-sm" placeholder="Dirección"></textarea>
+		<span class="textareaRequiredMsg">Es necesario la Dirección</span>
+		<span class="textareaMinCharsMsg">La Dirección debe especificar al menos 10 caracteres.</span>	
 		</span>
       </div>
 	  <div class="form-group">
-        <label for="exampleInputEmail1">Phone</label>
+        <label for="exampleInputEmail1">Teléfono</label>
 		<span id="sprytf_phone">
-        <input type="text" name="phone" class="form-control input-sm"  placeholder="Phone number">
-		<span class="textfieldRequiredMsg">Phone number is required.</span>
+        <input type="text" name="phone" class="form-control input-sm"  placeholder="Número de teléfono">
+		<span class="textfieldRequiredMsg">Es necesario el Teléfono</span>
 		</span>
       </div>
 	  <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
+        <label for="exampleInputEmail1">Correo</label>
 		<span id="sprytf_email">
-        <input type="text" name="email" class="form-control input-sm" placeholder="Enter email">
-		<span class="textfieldRequiredMsg">Email ID is required.</span>
-		<span class="textfieldInvalidFormatMsg">Please enter a valid email (user@domain.com).</span>
+        <input type="text" name="email" class="form-control input-sm" placeholder="Ingrese correo">
+		<span class="textfieldRequiredMsg">Es necesario el Correo</span>
+		<span class="textfieldInvalidFormatMsg">Por favor introduzca una dirección de correo electrónico válida (user@domain.com).</span>
 		</span>
       </div>
 	  
 
 	<div class="form-group">
-        <label for="exampleInputEmail1">Uset Type</label>
+        <label for="exampleInputEmail1">Tipo de Usuario</label>
 		<span id="sprytf_type">
         <select name="type"  class="form-control input-sm">
-			<option value=""> -- select user type --</option>
-			<option value="student">Student</option>
-			<option value="teacher">Teacher</option>
+			<option value=""> -- seleccione el tipo de usuario --</option>
+			<option value="student">Estudiante</option>
+			<option value="teacher">Profesor</option>
 		</select>
-		<span class="selectRequiredMsg">Please select User Type.</span>
+		<span class="selectRequiredMsg">Seleccione Tipo de Usuario</span>
 		</span>
 		
       </div>
@@ -66,7 +66,7 @@
 	  
     <!-- /.box-body -->
     <div class="box-footer">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </div>
   </form>
 </div>

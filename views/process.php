@@ -61,7 +61,7 @@ function changeStatus() {
 	$bodymsg = "User $name booked the date slot on $bkdate. Requesting you to please take further action on user booking.<br/>Mbr/>Tousif Khan";
 	$data = array('to' => '$email', 'sub' => 'Booking on $rdate.', 'msg' => $bodymsg);
 	//send_email($data);
-	header('Location: ../views/?v=USERS&msg=' . urlencode('User status successfully updated.'));
+	header('Location: ../views/?v=USERS&msg=' . urlencode('Estado de usuario actualizado con éxito'));
 	exit();
 }
 ?>

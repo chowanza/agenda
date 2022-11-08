@@ -8,12 +8,12 @@
   <ul class="nav navbar-nav">
   	<li class="dropdown user user-menu"> 
 		<a> 
-		<span class="hidden-xs"></i>Welcome, <?php echo strtoupper($_SESSION['calendar_fd_user']['name']); ?></span> 
+		<span class="hidden-xs"></i>Bienvenido, <?php echo strtoupper($_SESSION['calendar_fd_user']['name']); ?></span> 
 		</a>
 	</li>
     <li class="dropdown user user-menu"> 
 	<a href="<?php echo WEB_ROOT; ?>?logout"> 
-	<span class="hidden-xs"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Log Out</span> 
+	<span class="hidden-xs"><i class="fa fa-sign-out" aria-hidden="true"></i>&nbsp;Cerrar Sesión</span> 
 	</a>
     </li>
   </ul>

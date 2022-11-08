@@ -1,2 +1,2 @@
-<div class="pull-right hidden-xs"> <b>Version</b> 2.3.0 </div>
-<strong>Copyright &copy; 2014-2015 <a href="http://www.online-event-management.eu" target="_blank">Online Event Management</a>.</strong> All rights reserved.
+<div class="pull-right hidden-xs"> <b></div>
+<strong>Copyright &copy; 2022 Consorcio XYZ</a>.</strong> Reservados todos los derechos.

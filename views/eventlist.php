@@ -10,21 +10,21 @@ if($type == 'admin') {
 <div class="col-md-12">
   <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title">Event Booking Details</h3>
+      <h3 class="box-title">Detalles de Reserva de Eventos</h3>
     </div>
     <!-- /.box-header -->
     <div class="box-body">
       <table class="table table-bordered">
         <tr>
           <th style="width: 10px">#</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Phone</th>
-          <th>Booking Date</th>
-          <th style="width: 140px">Number of People</th>
-          <th style="width: 100px">Status</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Telefono</th>
+          <th>Fecha de Reserva</th>
+          <th style="width: 140px">Número de Personas</th>
+          <th style="width: 100px">Estado</th>
           <?php if($utype == 'on') { ?>
-		  <th >Action</th>
+		  <th >Acción</th>
 		  <?php } ?>
         </tr>
         <?php

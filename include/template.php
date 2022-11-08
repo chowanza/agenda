@@ -16,7 +16,7 @@ $self = WEB_ROOT . 'admin/index.php';
     <!-- Logo -->
     <a href="<?php echo WEB_ROOT; ?>" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-lg"><b>Calendar Event Management System</b></span> </a>
+    <span class="logo-lg"><b>Sistema de Eventos de Calendario</b></span> </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top" role="navigation">
       <?php include('nav.php'); ?>
@@ -30,7 +30,7 @@ $self = WEB_ROOT . 'admin/index.php';
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
-      <h1> Event Management <small>manage your events easily.</small> </h1>
+      <h1>  Gestión de Eventos</h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
         <li class="active">Calendar</li>

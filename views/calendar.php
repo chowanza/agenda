@@ -26,10 +26,10 @@ $(function () {
             right: 'month,agendaWeek,agendaDay'
 		},
         buttonText: {
-            today: 'today',
-            month: 'month',
-            week: 'week',
-            day: 'day'
+            today: 'Hoy',
+            month: 'Mes',
+            week: 'Semana',
+            day: 'Dia'
         },
 		//hiddenDays: [ 2, 4 ],
         events: function(start, end, timezone, callback) {

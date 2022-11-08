@@ -14,24 +14,24 @@ while($row = dbFetchAssoc($res)) {
 <div class="col-md-9">
   <div class="box box-solid">
     <div class="box-header with-border"> <i class="fa fa-text-width"></i>
-      <h3 class="box-title">User Details</h3>
+      <h3 class="box-title">Detalles del Usuario</h3>
     </div>
     <!-- /.box-header -->
     <div class="box-body">
       <dl class="dl-horizontal">
-        <dt>Username</dt>
+        <dt>Nombre de Usuario</dt>
         <dd><?php echo $name; ?></dd>
         
-		<dt>Address</dt>
+		<dt>Dirección</dt>
         <dd><?php echo $address; ?></dd>
 		
-		<dt>Email</dt>
+		<dt>Correo</dt>
         <dd><?php echo $email; ?></dd>
 		
-		<dt>Phone</dt>
+		<dt>Teléfono</dt>
         <dd><?php echo $phone; ?></dd>
 		
-		<dt>Booking Status</dt>
+		<dt>Estado</dt>
         <dd><span class="label label-<?php echo $stat; ?>"><?php echo $status; ?></span></dd>
 		
       </dl>

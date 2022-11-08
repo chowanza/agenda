@@ -9,18 +9,18 @@
 
 <div class="box box-primary">
   <div class="box-header with-border">
-    <h3 class="box-title"><b>Book Event</b></h3>
+    <h3 class="box-title"><b>Evento</b></h3>
   </div>
   <!-- /.box-header -->
   <!-- form start -->
   <form role="form" action="<?php echo WEB_ROOT; ?>api/process.php?cmd=book" method="post">
     <div class="box-body">
       <div class="form-group">
-        <label for="exampleInputEmail1">Name</label>
+        <label for="exampleInputEmail1">Nombre</label>
 		<input type="hidden" name="userId" value=""  id="userId"/>
         <span id="sprytf_name">
 		<select name="name" class="form-control input-sm">
-			<option>--select user--</option>
+			<option>--seleccione usuario--</option>
 			<?php
 			$sql = "SELECT id, name FROM tbl_users";
 			$result = dbQuery($sql);
@@ -32,66 +32,66 @@
 			}
 			?>
 		</select>
-		<span class="selectRequiredMsg">Name is required.</span>
+		<span class="selectRequiredMsg">Es necesario el nombre</span>
 		
 		</span>
       </div>
 	  
 	  <div class="form-group">
-        <label for="exampleInputEmail1">Address</label>
+        <label for="exampleInputEmail1">Dirección</label>
 		<span id="sprytf_address">
-        <textarea name="address" class="form-control input-sm" placeholder="Address" id="address"></textarea>
-		<span class="textareaRequiredMsg">Address is required.</span>
-		<span class="textareaMinCharsMsg">Address must specify at least 10 characters.</span>	
+        <textarea name="address" class="form-control input-sm" placeholder="Dirección" id="address"></textarea>
+		<span class="textareaRequiredMsg">Es necesario la dirección.</span>
+		<span class="textareaMinCharsMsg">La dirección debe especificar al menos 10 caracteres.</span>	
 		</span>
       </div>
 	  <div class="form-group">
-        <label for="exampleInputEmail1">Phone</label>
+        <label for="exampleInputEmail1">Teléfono</label>
 		<span id="sprytf_phone">
-        <input type="text" name="phone" class="form-control input-sm"  placeholder="Phone number" id="phone">
-		<span class="textfieldRequiredMsg">Phone number is required.</span>
+        <input type="text" name="phone" class="form-control input-sm"  placeholder="Número de teléfono" id="phone">
+		<span class="textfieldRequiredMsg">Es necesario el teléfono</span>
 		</span>
       </div>
 	  <div class="form-group">
-        <label for="exampleInputEmail1">Email address</label>
+        <label for="exampleInputEmail1">Correo</label>
 		<span id="sprytf_email">
-        <input type="text" name="email" class="form-control input-sm" placeholder="Enter email" id="email">
-		<span class="textfieldRequiredMsg">Email ID is required.</span>
-		<span class="textfieldInvalidFormatMsg">Please enter a valid email (user@domain.com).</span>
+        <input type="text" name="email" class="form-control input-sm" placeholder="Ingrese correo" id="email">
+		<span class="textfieldRequiredMsg">Es necesario el correo</span>
+		<span class="textfieldInvalidFormatMsg">Por favor introduzca una dirección de correo electrónico válida (user@domain.com).</span>
 		</span>
       </div>
 	  
       <div class="form-group">
       <div class="row">
       	<div class="col-xs-6">
-			<label>Reservation Date</label>
+			<label>Fecha de Reserva</label>
 			<span id="sprytf_rdate">
-        	<input type="text" name="rdate" class="form-control" placeholder="YYYY-mm-dd">
-			<span class="textfieldRequiredMsg">Date is required.</span>
-			<span class="textfieldInvalidFormatMsg">Invalid date Format.</span>
+        	<input type="text" name="rdate" class="form-control" placeholder="YYYY-MM-DD">
+			<span class="textfieldRequiredMsg">Es necesaria la Fecha</span>
+			<span class="textfieldInvalidFormatMsg">Formato de fecha no válido</span>
 			</span>
         </div>
         <div class="col-xs-6">
-			<label>Reservation Time</label>
+			<label>Tiempo de Reserva</label>
 			<span id="sprytf_rtime">
-            <input type="text" name="rtime" class="form-control" placeholder="HH:mm">
-			<span class="textfieldRequiredMsg">Time is required.</span>
-			<span class="textfieldInvalidFormatMsg">Invalid time Format.</span>
+            <input type="text" name="rtime" class="form-control" placeholder="HH:MM">
+			<span class="textfieldRequiredMsg">Es necesario el tiempo</span>
+			<span class="textfieldInvalidFormatMsg">Formato de tiempo no válido.</span>
 			</span>
        </div>
       </div>
 	  </div>
 				  
 	  <div class="form-group">
-        <label for="exampleInputPassword1">No of Peoples</label>
+        <label for="exampleInputPassword1">Número de Personas</label>
 		<span id="sprytf_ucount">
-        <input type="text" name="ucount" class="form-control input-sm" placeholder="No of peoples" >
-		<span class="textfieldRequiredMsg">No of peoples is required.</span>
-		<span class="textfieldInvalidFormatMsg">Invalid Format.</span>
+        <input type="text" name="ucount" class="form-control input-sm" placeholder="Ingrese nro de personas" >
+		<span class="textfieldRequiredMsg">Es necesario el número de personas</span>
+		<span class="textfieldInvalidFormatMsg">Formato Inválido</span>
       </div>
     <!-- /.box-body -->
     <div class="box-footer">
-      <button type="submit" class="btn btn-primary">Submit</button>
+      <button type="submit" class="btn btn-primary">Enviar</button>
     </div>
   </form>
 </div>

@@ -3,16 +3,16 @@ $records = getHolidayRecords();
 ?>
 <div class="box">
   <div class="box-header with-border">
-    <h3 class="box-title">Holiday List</h3>
+    <h3 class="box-title">Lista de Vacaciones</h3>
   </div>
   <!-- /.box-header -->
   <div class="box-body">
     <table class="table table-bordered">
       <tr>
         <th style="width: 10px">#</th>
-        <th>Date</th>
-        <th>Reason</th>
-        <th>Action</th>
+        <th>Fecha</th>
+        <th>Motivo</th>
+        <th>Acción</th>
       </tr>
       <?php
 	  $idx = 1;
@@ -35,7 +35,7 @@ $records = getHolidayRecords();
 <!-- /.box -->
 <script language="javascript">
 function deleteHoliday(hid) {
-	if(confirm('Deleting holiday will allows user to book that date.\n\nAre you sure you want to proceed ?')) {
+	if(confirm('Eliminar vacaciones permitirá a otro usuario reservar esa fecha\n\nSeguro que desea continuar?')) {
 		window.location.href = '<?php echo WEB_ROOT; ?>api/process.php?cmd=hdelete&hId='+hid;
 	}
 }

@@ -58,19 +58,19 @@ if (isset($_POST['name']) && isset($_POST['pwd'])) {
         <form action="" method="post">
           <div class="form-group has-feedback">
 		  	<span id="sprytf_name"> 
-            <input type="text" name="name" class="form-control" placeholder="Username">
+            <input type="text" name="name" class="form-control" placeholder="Usuario">
             <span class="glyphicon glyphicon-user form-control-feedback"></span>
-			<span class="textfieldRequiredMsg">Username is required.</span>
-			<span class="textfieldMinCharsMsg">Username must specify at least 4 characters.</span>
+			<span class="textfieldRequiredMsg">Es necesario ingresar un usuario.</span>
+			<span class="textfieldMinCharsMsg">El nombre de usuario debe especificar al menos 4 caracteres</span>
 			</span>
           </div>
           <div class="form-group has-feedback">
 		  	<span id="sprytf_pwd"> 
-            <input type="password" name="pwd" class="form-control" placeholder="Password">
+            <input type="password" name="pwd" class="form-control" placeholder="Contraseña">
             <span class="glyphicon glyphicon-lock form-control-feedback"></span>
-			<span class="passwordRequiredMsg">Password is required.</span>
-			<span class="passwordMinCharsMsg">You must specify at least 6 characters.</span>
-			<span class="passwordMaxCharsMsg">You must specify at max 10 characters.</span>
+			<span class="passwordRequiredMsg">Es necesario ingresar la contraseña</span>
+			<span class="passwordMinCharsMsg">Debe contener al menos 6 caracteres</span>
+			<span class="passwordMaxCharsMsg">Debe contener máximo 10 caracteres</span>
 			</span>
           </div>
           <div class="row">
@@ -78,7 +78,7 @@ if (isset($_POST['name']) && isset($_POST['pwd'])) {
               
             </div><!-- /.col -->
             <div class="col-xs-4">
-              <button type="submit" class="btn btn-success btn-block btn-flat">Sign In</button>
+              <button type="submit" class="btn btn-success btn-block btn-flat">Ingresar</button>
             </div><!-- /.col -->
           </div>
         </form>

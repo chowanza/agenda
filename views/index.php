@@ -9,32 +9,32 @@ $view = (isset($_GET['v']) && $_GET['v'] != '') ? $_GET['v'] : '';
 switch ($view) {
 	case 'LIST' :
 		$content 	= 'eventlist.php';		
-		$pageTitle 	= 'View Event Details';
+		$pageTitle 	= 'Ver Detalles del Evento';
 		break;
 
 	case 'USERS' :
 		$content 	= 'userlist.php';		
-		$pageTitle 	= 'View User Details';
+		$pageTitle 	= 'Ver Detalles de Usuario';
 		break;
 		
 	case 'CREATE' :
 		$content 	= 'userform.php';		
-		$pageTitle 	= 'Create New User';
+		$pageTitle 	= 'Crear nuevo usuario';
 		break;
 		
 	case 'USER' :
 		$content 	= 'user.php';		
-		$pageTitle 	= 'View User Details';
+		$pageTitle 	= 'Ver detalles del usuario';
 		break;
 	
 	case 'HOLY' :
 		$content 	= 'holidays.php';		
-		$pageTitle 	= 'Holidays';
+		$pageTitle 	= 'Dias Feriados';
 		break;	
 	
 	default :
 		$content 	= 'dashboard.php';		
-		$pageTitle 	= 'Calendar Dashboard';
+		$pageTitle 	= 'Panel de Calendario';
 }
 
 require_once '../include/template.php';

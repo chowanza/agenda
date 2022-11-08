@@ -50,7 +50,7 @@ function addHoliday() {
 	$result = dbQuery($sql);
 	
 	if (dbNumRows($result) > 0) {
-		$errorMessage = 'Holiday already exist in record.';
+		$errorMessage = 'Las vacaciones ya existen en el registro.';
 		header('Location: ../views/?v=HOLY&err=' . urlencode($errorMessage));
 		exit();
 	}
@@ -58,7 +58,7 @@ function addHoliday() {
 		$sql = "INSERT INTO tbl_holidays (date, reason, bdate)
 				VALUES ('$date', '$reason', NOW())";	
 		dbQuery($sql);
-		$msg = 'Holiday successfully added on calendar.';
+		$msg = 'Vacaciones agregadas con éxito en el calendario';
 		header('Location: ../views/?v=HOLY&msg=' . urlencode($msg));
 		exit();
 	}
@@ -99,7 +99,7 @@ function bookCalendar() {
 	$bodymsg = "User $name booked the date slot on $bkdate. Requesting you to please take further action on user booking.<br/>Mbr/>Tousif Khan";
 	$data = array('to' => 'tousifkhan510@gmail.com', 'sub' => 'Booking on $rdate.', 'msg' => $bodymsg);
 	//send_email($data);
-	header('Location: ../index.php?msg=' . urlencode('User successfully registered.'));
+	header('Location: ../index.php?msg=' . urlencode('Usuario registrado con éxito.'));
 	exit();
 }
 
@@ -133,7 +133,7 @@ function deleteHoliday() {
 	$holyId	= $_GET['hId'];
 	$dsql	= "DELETE FROM tbl_holidays WHERE id = $holyId";
 	dbQuery($dsql);
-	header('Location: ../views/?v=HOLY&msg=' . urlencode('Holiday record successfully deleted.'));
+	header('Location: ../views/?v=HOLY&msg=' . urlencode('Registro de vacaciones eliminado con éxito'));
 	exit();
 }
 

@@ -10,18 +10,18 @@ if($type == 'admin' || $type == 'teacher') {
 <div class="col-md-12">
   <div class="box">
     <div class="box-header with-border">
-      <h3 class="box-title">User details</h3>
+      <h3 class="box-title">Detalles de Usuario</h3>
     </div>
     <!-- /.box-header -->
     <div class="box-body">
       <table class="table table-bordered">
         <tr>
           <th style="width: 10px">#</th>
-          <th>Name</th>
-          <th>Email</th>
-          <th>Phone</th>
-          <th>User Role</th>
-          <th style="width: 100px">Status</th>
+          <th>Nombre</th>
+          <th>Correo</th>
+          <th>Teléfono</th>
+          <th>Rol de Usuario</th>
+          <th style="width: 100px">Estado</th>
           <?php if($utype == 'on') { ?>
 		  <th>Action</th>
 		  <?php } ?>
@@ -47,9 +47,9 @@ if($type == 'admin' || $type == 'teacher') {
           <td><span class="label label-<?php echo $stat; ?>"><?php echo strtoupper($status); ?></span></td>
           <?php if($utype == 'on') { ?>
 		  <td><?php if($status == "active") {?>
-            <a href="javascript:status('<?php echo $user_id ?>', 'inactive');">Inactive</a>&nbsp;/
-			&nbsp;<a href="javascript:status('<?php echo $user_id ?>', 'lock');">Account Lock</a>&nbsp;/
-			&nbsp;<a href="javascript:status('<?php echo $user_id ?>', 'delete');">Delete</a>
+            <a href="javascript:status('<?php echo $user_id ?>', 'inactive');">Inactivar</a>&nbsp;/
+			&nbsp;<a href="javascript:status('<?php echo $user_id ?>', 'lock');">Bloquear</a>&nbsp;/
+			&nbsp;<a href="javascript:status('<?php echo $user_id ?>', 'delete');">Eliminar</a>
             <?php } else { ?>
 			<a href="javascript:status('<?php echo $user_id ?>', 'active');">Active</a>
 			<?php }//else ?>
@@ -66,7 +66,7 @@ if($type == 'admin' || $type == 'teacher') {
 	$type = $_SESSION['calendar_fd_user']['type'];
 	if($type == 'admin') {
 	?>
-	<button type="button" class="btn btn-info" onclick="javascript:createUserForm();"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Create a new User</button>
+	<button type="button" class="btn btn-info" onclick="javascript:createUserForm();"><i class="fa fa-user-plus" aria-hidden="true"></i>&nbsp;Crear un Nuevo Usuario</button>
 	<?php 
 	}
 	?>
@@ -89,7 +89,7 @@ function createUserForm() {
 	window.location.href = '<?php echo WEB_ROOT; ?>views/?v=CREATE';
 }
 function status(userId, status) {
-	if(confirm('Are you sure you wants to ' + status+ ' it ?')) {
+	if(confirm('Estás seguro de que quieres ' + status+ '?')) {
 		window.location.href = '<?php echo WEB_ROOT; ?>views/process.php?cmd=change&action='+ status +'&userId='+userId;
 	}
 }
