@@ -6,7 +6,7 @@
 		<a href="<?php echo WEB_ROOT; ?>views/?v=DB"><i class="fa fa-calendar"></i><span>CALENDARIO DE EVENTOS</span></a>
 	</li>
     <li class="treeview"> 
-		<a href="<?php echo WEB_ROOT; ?>views/?v=LIST"><i class="fa fa-newspaper-o"></i><span>RESERVA DE EVENTOS</span></a>
+		<a href="<?php echo WEB_ROOT; ?>views/?v=LIST"><i class="fa fa-newspaper-o"></i><span>CREAR REUNIÓN</span></a>
 	</li>
 	<li class="treeview"> 
 		<a href="<?php echo WEB_ROOT; ?>views/?v=USERS"><i class="fa fa-users"></i><span>DETALLES DE USUARIO</span></a>
@@ -16,7 +16,7 @@
 	if($type == 'admin') {
 	?>
 	<li class="treeview"> 
-		<a href="<?php echo WEB_ROOT; ?>views/?v=HOLY"><i class="fa fa-plane"></i><span>DIAS FERIADOS</span></a>
+		<a href="<?php echo WEB_ROOT; ?>views/?v=HOLY"><i class="fa fa-plane"></i><span>CREAR PUNTO</span></a>
 	</li>
 	<?php
 	}

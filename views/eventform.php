@@ -9,14 +9,14 @@
 
 <div class="box box-primary">
   <div class="box-header with-border">
-    <h3 class="box-title"><b>Evento</b></h3>
+    <h3 class="box-title"><b>Crear Reunión</b></h3>
   </div>
   <!-- /.box-header -->
   <!-- form start -->
   <form role="form" action="<?php echo WEB_ROOT; ?>api/process.php?cmd=book" method="post">
     <div class="box-body">
       <div class="form-group">
-        <label for="exampleInputEmail1">Nombre</label>
+        <label for="exampleInputEmail1">Autor</label>
 		<input type="hidden" name="userId" value=""  id="userId"/>
         <span id="sprytf_name">
 		<select name="name" class="form-control input-sm">
@@ -38,7 +38,7 @@
       </div>
 	  
 	  <div class="form-group">
-        <label for="exampleInputEmail1">Dirección</label>
+        <label for="exampleInputEmail1">Descripción Punto</label>
 		<span id="sprytf_address">
         <textarea name="address" class="form-control input-sm" placeholder="Dirección" id="address"></textarea>
 		<span class="textareaRequiredMsg">Es necesario la dirección.</span>
@@ -46,25 +46,25 @@
 		</span>
       </div>
 	  <div class="form-group">
-        <label for="exampleInputEmail1">Teléfono</label>
+        <label for="exampleInputEmail1">Tipo de Punto</label>
 		<span id="sprytf_phone">
         <input type="text" name="phone" class="form-control input-sm"  placeholder="Número de teléfono" id="phone">
 		<span class="textfieldRequiredMsg">Es necesario el teléfono</span>
 		</span>
       </div>
-	  <div class="form-group">
+	  <!--<div class="form-group">
         <label for="exampleInputEmail1">Correo</label>
 		<span id="sprytf_email">
         <input type="text" name="email" class="form-control input-sm" placeholder="Ingrese correo" id="email">
 		<span class="textfieldRequiredMsg">Es necesario el correo</span>
 		<span class="textfieldInvalidFormatMsg">Por favor introduzca una dirección de correo electrónico válida (user@domain.com).</span>
 		</span>
-      </div>
+      </div>-->
 	  
       <div class="form-group">
       <div class="row">
       	<div class="col-xs-6">
-			<label>Fecha de Reserva</label>
+			<label>Fecha de Reunión</label>
 			<span id="sprytf_rdate">
         	<input type="text" name="rdate" class="form-control" placeholder="YYYY-MM-DD">
 			<span class="textfieldRequiredMsg">Es necesaria la Fecha</span>
@@ -72,7 +72,7 @@
 			</span>
         </div>
         <div class="col-xs-6">
-			<label>Tiempo de Reserva</label>
+			<label>Hora de Reunión</label>
 			<span id="sprytf_rtime">
             <input type="text" name="rtime" class="form-control" placeholder="HH:MM">
 			<span class="textfieldRequiredMsg">Es necesario el tiempo</span>
@@ -82,7 +82,7 @@
       </div>
 	  </div>
 				  
-	  <div class="form-group">
+	 <!-- <div class="form-group">
         <label for="exampleInputPassword1">Número de Personas</label>
 		<span id="sprytf_ucount">
         <input type="text" name="ucount" class="form-control input-sm" placeholder="Ingrese nro de personas" >
